@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encapsulation</title>
+</head>
+<body>
+    <script>
+        class Bank{
+            constructor()
+            {
+                var bal;
+            }
+
+            setBal(a)
+            {
+                this.bal=a;
+            }
+
+            updateBal(debitSum)
+            {
+                if(debitSum>this.bal)
+                {
+                    document.write("Insufficient balance");
+                }
+                else
+                {
+                    this.bal=a-debitsum;
+                }
+            }
+
+            getBalSum()
+            {
+                return this.bal;
+            }
+        }
+        var ob=new Bank();
+        ob.setBal(10000);
+        var debitSum=1000;
+        ob.updateBal(debitSum);
+        document.write(ob.getBalSum());
+    </script>
+</body>
+</html>

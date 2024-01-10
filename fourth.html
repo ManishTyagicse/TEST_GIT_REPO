@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- class is a logical entity because it does not take space in memory. -->
+    <!-- object are stored in heap memory -->
+    <!-- constructor is responsible for creating the object of the class -->
+    <!-- constructor gets executed automatically at the time of object creation -->
+    <!-- heap memory always contain objects only and not methods,functions,variables -->
+</head>
+<body>
+    <script>         
+        class A 
+        {
+            func(a){
+                document.writeln("d function" +a+ "<br>");
+            }
+
+            r()
+            {
+                document.write("r second "+"<br>");
+            }
+
+            s()
+            {
+                document.write("r third "+"<br>");
+            }
+
+            /* constructor(a,b)
+            {
+                document.write("constructor "+a+" "+b+"<br>");
+            } */
+
+            /* constructor()
+            {
+                document.write("welcome in cseb"+"<br>");
+            } */
+
+            /* constructor()
+            {
+                let a=90,b=60;
+                let c=a+b;
+
+                document.write("constructor "+c+"<br>");
+            }
+            */
+            constructor(d)
+            {
+                this.a=90;
+                let a=50;
+
+                document.writeln(a+" "+this.a+" "+d);
+            }
+        }
+
+        /* by default constructor is provided by the class if no constructor is created by the user */
+        /* at a time you can only create single constructor at time */
+        let ob= new A(10);
+        ob.r();
+        ob.func(17);
+        ob.s();
+
+        /* let ob2= new A(20,30);
+        ob.r();
+        ob.func(27);
+        ob.s();
+        */
+        /* in java
+
+          A       |  ob =               | new      | A();
+        reference |  reference_variable | keyword  | constructor
+         */
+
+
+    </script>
+</body>
+</html>

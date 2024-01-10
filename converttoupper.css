@@ -1,0 +1,10 @@
+p{
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    padding: 10px;
+    border: 2px solid red;
+    text-align: center;
+    cursor: pointer;
+    color: rgb(0,0,255,0.7);
+    background-color: azure;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <script>
+      function display() {
+        let c = document.getElementById("3").value;
+        let b = document.getElementById("2").value;
+        let a = document.getElementById("1").value;
+        if (a.length() <= 20) {
+          if (b.length() == 10) {
+            if (c >= 18 && c <= 23) {
+              alert("Valid Form!");
+            } else {
+              alert("InValid form");
+            }
+          } else {
+            alert("Number not correct");
+          }
+        } else {
+          alert("Length of name is not valid");
+        }
+      }
+    </script>
+    <style>
+      body {
+        align-content: center;
+        display: flex;
+        justify-content: center;
+        background-color: #8ec5fc;
+        background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+      }
+      .box {
+        height: 400px;
+        width: 400px;
+        background-color: #4158d0;
+        background-image: linear-gradient(
+          43deg,
+          #4158d0 0%,
+          #c850c0 46%,
+          #ffcc70 100%
+        );
+        background-repeat: space;
+        display: grid;
+        place-content: center;
+      }
+      .form1 {
+        display: grid;
+        place-content: center;
+      }
+
+      .btn {
+        background: #d93494;
+        background-image: -webkit-linear-gradient(top, #d93494, #872bb8);
+        background-image: -moz-linear-gradient(top, #d93494, #872bb8);
+        background-image: -ms-linear-gradient(top, #d93494, #872bb8);
+        background-image: -o-linear-gradient(top, #d93494, #872bb8);
+        background-image: linear-gradient(to bottom, #d93494, #872bb8);
+        -webkit-border-radius: 28;
+        -moz-border-radius: 28;
+        border-radius: 28px;
+        font-family: Arial;
+        color: #f2f2f2;
+        font-size: 20px;
+        padding: 10px 20px 10px 20px;
+        text-decoration: none;
+      }
+
+      .btn:hover {
+        background: #fcb33c;
+        background-image: -webkit-linear-gradient(top, #fcb33c, #d95534);
+        background-image: -moz-linear-gradient(top, #fcb33c, #d95534);
+        background-image: -ms-linear-gradient(top, #fcb33c, #d95534);
+        background-image: -o-linear-gradient(top, #fcb33c, #d95534);
+        background-image: linear-gradient(to bottom, #fcb33c, #d95534);
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <form class="form1">
+        NAME:<input type="text" name="Username" id="1" required /><br /><br />
+        PHONE NO:<input
+          type="number"
+          name="Phonenumber"
+          id="2"
+          required
+        /><br /><br />
+        AGE:<input type="number" name="Age" id="3" required /><br /><br />
+        <button class="btn" type="submit" onclick="display()">SUBMIT</button>
+      </form>
+    </div>
+  </body>
+</html>
